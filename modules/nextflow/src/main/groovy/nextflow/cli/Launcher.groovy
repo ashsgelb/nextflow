@@ -213,7 +213,7 @@ class Launcher {
             }
 
             else if( current == '-resume' ) {
-                if( i<args.size() && !args[i].startsWith('-') && (args[i]=='last' || args[i] =~~ /[0-9a-f]{8}\-[0-9a-f]{4}\-[0-9a-f]{4}\-[0-9a-f]{4}\-[0-9a-f]{8}/) ) {
+                if( i<args.size() && !args[i].startsWith('-') && (args[i]=='last' || args[i] ==~ /[0-9a-f]{8}\-[0-9a-f]{4}\-[0-9a-f]{4}\-[0-9a-f]{4}\-[0-9a-f]{8}/) ) {
                     normalized << args[i++]
                 }
                 else {
